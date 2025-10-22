@@ -1,0 +1,122 @@
+# ================================
+#  Site Configuration
+# ================================
+
+title: "Briana Verdugo"
+name: "Briana Verdugo"
+description: "Mathematical Statistician | Data & Economic Analysis | Analytics for Public Impact"
+url: "https://bnverdugo.github.io/webpage.github.io"
+baseurl: ""  # Leave blank for user/organization site
+
+# Author Info
+author:
+  name: "Briana Verdugo"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Turning complex data into actionable insights for smarter policy and decision-making."
+  location: "California, USA"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/bnverdugo"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/briana-verdugo"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:briana.verdugo@outlook.com"
+
+# ================================
+#  Theme Settings
+# ================================
+
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Navigation links (edit as needed)
+navigation:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Contact"
+    url: /contact/
+
+# ================================
+#  Appearance & Layout
+# ================================
+
+minimal_mistakes_skin: "default"  # base skin (we’ll override with custom colors)
+logo: "/assets/images/logo.png"
+search: true
+paginate: 5
+excerpt_separator: "<!--more-->"
+
+# Enable analytics or tracking if desired
+# google_analytics: G-XXXXXXXXXX
+
+# ================================
+#  Sass / CSS Overrides
+# ================================
+
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+
+# ================================
+#  Defaults
+# ================================
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: true
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+# ================================
+#  Build Settings
+# ================================
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: /:title/
+timezone: America/Los_Angeles
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# ================================
+#  GitHub Pages Config
+# ================================
+
+repository: bnverdugo.github.io/webpage.github.io
