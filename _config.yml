@@ -29,7 +29,7 @@ author:
 #  Theme Settings
 # ================================
 
-theme: minimal-mistakes-jekyll
+theme: minimal-jekyll
 
 plugins:
   - jekyll-feed
@@ -52,7 +52,7 @@ navigation:
 #  Appearance & Layout
 # ================================
 
-minimal_mistakes_skin: "default"  # base skin (we’ll override with custom colors)
+minimal_skin: "default"  # base skin (we’ll override with custom colors)
 logo: "/assets/images/logo.png"
 search: true
 paginate: 5
